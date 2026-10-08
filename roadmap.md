@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Eliminat a doua locație de peste tot; păstrat doar prima locație demo
+- [x] Eliminat a doua locație de peste tot; păstrat doar prima locație demo (28 pagini și apel/traseu verificate)
 
 - [x] Înlocuit toate adresele și reperele reale cu locații demo, inclusiv hărți și informații SEO
 - [x] Eliminat CUI și Registrul Comerțului din toate paginile

@@ -710,6 +710,8 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .demo-portrait{aspect-ratio:4/5}
 .loc-ph.loc-demo{display:flex;align-items:center;justify-content:center;background:none;min-height:240px}
 .loc-ph .demo-art{height:100%;aspect-ratio:auto}
+.map.loc-demo .demo-art{color:var(--bg-0);padding:24px;text-align:center}
+.map.loc-demo .demo-art small{font-family:var(--font-t);font-size:16px;font-weight:500;color:var(--dark-text)}
 .hero-bg,.phero .bg{display:flex;align-items:center;justify-content:flex-end;padding-right:var(--gutter)}
 .hero-bg>.demo-art,.phero .bg>.demo-art{width:32%;color:var(--bg-0);min-height:0;aspect-ratio:auto}
 .hero-bg>.demo-art>.demo-wheel,.phero .bg>.demo-art>.demo-wheel{width:140px;height:140px;color:var(--accent-hi)}

@@ -1,8 +1,8 @@
 # Roadmap
 
-- [ ] Înlocuit toate adresele și reperele reale cu locații demo, inclusiv hărți și informații SEO
-- [ ] Eliminat CUI și Registrul Comerțului din toate paginile
-- [ ] Verificat contactul, alegerea locației și confidențialitatea
+- [x] Înlocuit toate adresele și reperele reale cu locații demo, inclusiv hărți și informații SEO
+- [x] Eliminat CUI și Registrul Comerțului din toate paginile
+- [x] Verificat contactul, alegerea locației și confidențialitatea
 
 - [x] Eliminat pagina /cafea-gratis, secțiunile „Zona de relaxare", „Cafeaua e din partea casei", FAQ, pills, schema amenityFeature
 - [x] Curățat resturi: aside hero-cup, verificare finală grep cafea/relaxare

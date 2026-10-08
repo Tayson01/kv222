@@ -764,6 +764,23 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 #mobila .clock .lbl b{font-family:"Bebas Neue",sans-serif;font-weight:400;font-style:italic;letter-spacing:-.03em;background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:14px 30px 16px;backdrop-filter:blur(8px);box-shadow:0 20px 50px -20px rgba(0,0,0,.7)}
 #mobila .clock .lbl small{font-family:"Barlow",sans-serif;background:#dc2626;color:#fff;letter-spacing:.2em;border:none;border-radius:3px;padding:4px 14px;font-weight:700;text-transform:uppercase}
 @media (max-width:900px){#mobila h2{font-size:clamp(2.8rem,12vw,3.8rem)}}
+@media (max-width:900px){
+  #mobila{padding-block:52px}
+  #mobila::before{background-size:40px 40px}
+  #mobila .eyebrow{font-size:.72rem;letter-spacing:.22em}
+  #mobila .eyebrow::before{width:32px}
+  #mobila h2{font-size:clamp(2.4rem,10.5vw,3.2rem);margin-top:12px!important}
+  #mobila .lead{font-size:1rem;line-height:1.55;margin-top:12px!important}
+  #mobila .zones{margin-top:16px}
+  #mobila .zones span{font-size:.82rem;padding:6px 11px}
+  #mobila .btns{margin-top:18px!important;flex-direction:column;gap:10px}
+  #mobila .btns .btn{width:100%;min-height:54px;font-size:1.35rem;padding:12px 18px}
+  #mobila .link{font-size:.72rem;letter-spacing:.12em}
+  #mobila .clock{max-width:190px;margin-top:6px}
+  #mobila .clock::before{filter:blur(70px)}
+  #mobila .clock .lbl b{padding:9px 20px 11px;font-size:2.3rem;border-radius:12px;box-shadow:0 12px 30px -14px rgba(0,0,0,.7)}
+  #mobila .clock .lbl small{font-size:.62rem;padding:3px 10px;letter-spacing:.16em}
+}
 
 /* ---------- status deschis/inchis (ora României) ---------- */
 .openst{display:inline-flex;align-items:center;gap:6px;margin-left:8px;padding:2px 10px;border-radius:999px;font-size:.78em;font-weight:700;letter-spacing:.02em;vertical-align:1px;white-space:nowrap}

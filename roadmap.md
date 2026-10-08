@@ -17,3 +17,5 @@
 - [x] Actualizat toate legăturile WhatsApp la 0777777777
 - [x] Verificat animațiile, galeria și mesajele WhatsApp pe desktop și mobil
 - [x] Verificare build + preview (/, /vulcanizare-aurel-vlaicu-215, /contact, /galerie — toate curate)
+
+- [x] Hartă acoperire sa123 — renunțat la cererea userului, revenit la harta demo

@@ -816,41 +816,6 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .pit-pill .openst::before{margin-right:6px}
 @media (max-width:900px){.pit-photo.pit-real{aspect-ratio:4/3.6}}
 
-/* ---------- Traseu / Google Maps demo ---------- */
-#traseu .route{margin-top:34px;display:grid;grid-template-columns:1.15fr .85fr;background:#05080d;border:1px solid rgba(255,255,255,.08);border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(3,6,12,.35)}
-#traseu .route-map{position:relative;min-height:320px;background:radial-gradient(120% 120% at 20% 0%,#0b111c 0%,#05080d 60%)}
-#traseu .route-map svg{position:absolute;inset:0;width:100%;height:100%}
-#traseu .rt-line{filter:drop-shadow(0 0 6px rgba(239,68,68,.55));animation:rt-dash 1.4s linear infinite}
-@keyframes rt-dash{to{stroke-dashoffset:-22}}
-#traseu .rt-from{filter:drop-shadow(0 0 8px rgba(232,93,58,.8))}
-#traseu .rt-pin{transform-origin:476px 70px;animation:rt-bounce 2.4s ease-in-out infinite}
-@keyframes rt-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-#traseu .route-in{padding:30px 30px 26px;display:flex;flex-direction:column;gap:18px}
-#traseu .route-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-#traseu .route-lbl{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#8b95a8}
-#traseu .route-pick{flex:1;min-width:180px;appearance:none;background:#0b111c;color:#fff;border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:12px 36px 12px 14px;font:inherit;font-weight:600;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,#e85d3a 50%),linear-gradient(135deg,#e85d3a 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
-#traseu .route-pick:focus{outline:2px solid #e85d3a;outline-offset:1px}
-#traseu .route-shuffle{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:12px 14px;font:inherit;font-weight:700;cursor:pointer;transition:border-color .2s,color .2s,transform .15s}
-#traseu .route-shuffle svg{width:16px;height:16px}
-#traseu .route-shuffle:hover{border-color:#e85d3a;color:#e85d3a;transform:rotate(-8deg)}
-#traseu .route-sum{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:auto}
-#traseu .route-eta{display:flex;flex-direction:column}
-#traseu .route-eta b{font-size:1.9rem;line-height:1.1;color:#fff;font-family:"Bebas Neue",Impact,sans-serif;letter-spacing:.03em}
-#traseu .route-eta span{color:#4ade80;font-weight:700}
-#traseu .route-eta small{color:#8b95a8;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
-#traseu .route-note{color:#8b95a8;font-size:.82rem;margin:0}
-#traseu .btn .f{display:inline}
-#traseu .btn .s{display:none}
-@media (max-width:900px){
-  #traseu .route{grid-template-columns:1fr}
-  #traseu .route-map{min-height:210px}
-  #traseu .route-in{padding:22px 20px}
-  #traseu .route-sum{flex-direction:column;align-items:stretch;gap:12px}
-  #traseu .route-sum .btn{width:100%;justify-content:center}
-  #traseu .btn .f{display:none}
-  #traseu .btn .s{display:inline}
-}
-#traseu .route-map .demo-tag{top:auto;bottom:14px}
 
 /* ---------- numar de telefon care clipește ---------- */
 .btn-call{animation:call-blink 2.2s ease-in-out infinite}

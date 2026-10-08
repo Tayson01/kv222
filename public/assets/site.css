@@ -804,3 +804,14 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .openst.off{color:#f87171;background:rgba(239,68,68,.12);border:1px solid rgba(248,113,113,.35)}
 .openst.off::before{background:#ef4444;box-shadow:0 0 8px #ef4444}
 @keyframes openst-pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
+
+/* Doi pasi — poza reala premium */
+.pit-photo.pit-real{aspect-ratio:4/3.4;background:#05080d}
+.pit-photo.pit-real::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,13,0) 55%,rgba(5,8,13,.55));pointer-events:none}
+.pit-photo.pit-real img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pit-photo.pit-real:hover img{transform:scale(1.04)}
+.pit-pill{z-index:2;display:inline-flex;align-items:center;gap:7px;background:rgba(9,15,27,.72);color:#fff;border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(0,0,0,.35);font-weight:600}
+.pit-pill svg{width:15px;height:15px;flex:none}
+.pit-pill .openst{background:transparent;border:0;padding:0;box-shadow:none}
+.pit-pill .openst::before{margin-right:6px}
+@media (max-width:900px){.pit-photo.pit-real{aspect-ratio:4/3.6}}

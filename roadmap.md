@@ -19,3 +19,4 @@
 - [x] Verificare build + preview (/, /vulcanizare-aurel-vlaicu-215, /contact, /galerie — toate curate)
 
 - [x] Hartă acoperire sa123 — renunțat la cererea userului, revenit la harta demo
+- [x] Card locație refăcut: poza nouă (vulcanizare-01-atelier), afișată complet fără tăieri, badge DEMO glass

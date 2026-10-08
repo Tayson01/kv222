@@ -7,7 +7,7 @@
 - [x] La locații: poze înlocuite cu placeholder „Poză demo", eyebrow „Două locații fictive · demo"
 - [x] Eliminat tot ce ține de vouchere (secțiuni, FAQ, schema, meta)
 - [x] Bandă „Site demo” eliminată la cererea utilizatorului
-- [ ] Înlocuit sigla și toate pozele cu animații DEMO fără fundal
-- [ ] Actualizat toate legăturile WhatsApp la 0777777777
-- [ ] Verificat animațiile, galeria și mesajele WhatsApp
+- [x] Înlocuit sigla și toate pozele cu animații DEMO fără fundal
+- [x] Actualizat toate legăturile WhatsApp la 0777777777
+- [x] Verificat animațiile, galeria și mesajele WhatsApp pe desktop și mobil
 - [x] Verificare build + preview (/, /vulcanizare-aurel-vlaicu-215, /contact, /galerie — toate curate)

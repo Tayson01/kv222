@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const situations = [
+const situations: [string, string][] = [
   ["Am făcut pană", "Cui, șurub, roata pierde aer"],
   ["Sunt blocat pe drum", "Venim noi la tine"],
   ["Schimb pe iarnă", "Sau pe vară. Fără programare"],
@@ -30,7 +30,7 @@ const situations = [
   ["Martor de presiune", "Aprins în bord și nu se stinge"],
 ];
 
-const steps = [
+const steps: [string, string][] = [
   ["Vii la una dintre locații", "Aurel Vlaicu 215, în curtea BWASH, sau Aurel Vlaicu 126, la Podul IPMC. Nu e nevoie de programare."],
   ["Bei o cafea din partea casei", "La Aurel Vlaicu 215 o comanzi la geam și aștepți în zona de relaxare, cu Wi-Fi și umbră."],
   ["Noi ne ocupăm de roți", "Montaj, echilibrare, verificăm uzura și presiunea. Dacă vedem ceva în neregulă, îți spunem."],
@@ -49,7 +49,7 @@ const services: [string, string, string?][] = [
   ["Geometrie roți", "Mașina trage într-o parte? Reglăm unghiurile roților pentru o direcție dreaptă."],
 ];
 
-const locations = [
+const locations: [string, string, string, string, string, string][] = [
   ["AutoSoft Aurel Vlaicu 215", "Bd. Aurel Vlaicu 215 · în curtea spălătoriei BWASH, lângă METRO", "până la 22:00", "0790 842 932", "+40790842932", "Bulevardul Aurel Vlaicu 215, Constanța"],
   ["AutoSoft Pod IPMC", "Bd. Aurel Vlaicu 126 · vizavi de fabrica de pâine Dobrogea", "până la 20:00", "0790 842 933", "+40790842933", "Bulevardul Aurel Vlaicu 126, Constanța"],
 ];

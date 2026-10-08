@@ -851,3 +851,8 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
   #traseu .btn .s{display:inline}
 }
 #traseu .route-map .demo-tag{top:auto;bottom:14px}
+
+/* ---------- numar de telefon care clipește ---------- */
+.btn-call{animation:call-blink 2.2s ease-in-out infinite}
+@keyframes call-blink{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0);filter:brightness(1)}50%{box-shadow:0 0 0 6px rgba(239,68,68,.25);filter:brightness(1.12)}}
+@media (prefers-reduced-motion:reduce){.btn-call{animation:none}}

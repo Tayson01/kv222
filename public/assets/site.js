@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   var d = document, w = window;
-  var TEL = "tel:+40790842932", WA = "https://wa.me/40728595539?text=";
+  var TEL = "tel:+40777777777", WA = "https://wa.me/40777777777?text=";
   var $ = function (s, c) { return (c || d).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || d).querySelectorAll(s)); };
 
@@ -262,8 +262,8 @@
   /* ---------- galerie + lightbox ---------- */
   var lb = $("#lb");
   if (lb) {
-    var items = $$(".gal button"), li = 0, lim = $("img", lb);
-    function open(i) { li = (i + items.length) % items.length; lim.src = items[li].getAttribute("data-full"); lim.alt = $("img", items[li]).alt; lb.classList.add("open"); d.body.classList.add("menu-open"); if (lb.parentNode !== d.body) d.body.appendChild(lb); setInert(true, lb); $(".x", lb).focus(); }
+    var items = $$(".gal button"), li = 0, lim = $(".demo-art", lb);
+    function open(i) { li = (i + items.length) % items.length; lim.setAttribute("aria-label", "Animație DEMO " + (li + 1) + " din " + items.length); lb.classList.add("open"); d.body.classList.add("menu-open"); if (lb.parentNode !== d.body) d.body.appendChild(lb); setInert(true, lb); $(".x", lb).focus(); }
     function close() { lb.classList.remove("open"); d.body.classList.remove("menu-open"); setInert(false); items[li] && items[li].focus(); }
     items.forEach(function (b, i) { b.addEventListener("click", function () { open(i); }); });
     $(".x", lb).addEventListener("click", close);

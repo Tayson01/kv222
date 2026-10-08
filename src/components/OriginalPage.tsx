@@ -4,9 +4,6 @@ import type { Page } from "@/content/pages.server";
 export function OriginalPage({ page }: { page: Page }) {
   return (
     <div style={{ display: "contents" }}>
-      <div className="demo-bar">
-        Site <b>demo</b> — conținut fictiv de prezentare · Demo Vulcanizare Auto
-      </div>
       <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: page.html }} />
     </div>
   );

@@ -704,6 +704,8 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .loc-ph .demo-art{height:100%;aspect-ratio:auto}
 .map.loc-demo .demo-art{color:var(--bg-0);padding:24px;text-align:center}
 .map.loc-demo .demo-art small{font-family:var(--font-t);font-size:16px;font-weight:500;color:var(--dark-text)}
+.demo-tag{position:absolute;top:12px;right:12px;z-index:2;font-family:var(--font-t);font-weight:700;font-size:12px;letter-spacing:.14em;color:#fff;background:rgba(9,15,27,.72);border:1px solid rgba(255,255,255,.28);padding:6px 11px;border-radius:999px;backdrop-filter:blur(4px);pointer-events:none}
+.map.map-photo img{opacity:1}
 .hero-bg,.phero .bg{display:flex;align-items:center;justify-content:flex-end;padding-right:var(--gutter)}
 .hero-bg>.demo-art,.phero .bg>.demo-art{width:32%;color:var(--bg-0);min-height:0;aspect-ratio:auto}
 .hero-bg>.demo-art>.demo-wheel,.phero .bg>.demo-art>.demo-wheel{width:140px;height:140px;color:var(--accent-hi)}

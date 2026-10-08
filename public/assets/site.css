@@ -694,3 +694,12 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .f-legal{display:inline-flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
 .f-ck{background:none;border:0;padding:0;color:inherit;text-decoration:underline;text-underline-offset:3px;font-size:inherit;cursor:pointer}
 .ptable.ck-tbl td:last-child,.ptable.ck-tbl th:last-child{text-align:left;white-space:normal}
+
+/* Demo overrides */
+.demo-bar{position:sticky;top:0;z-index:2000;background:#0B1322;color:#fff;text-align:center;font-size:12px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;padding:7px 12px}
+.demo-bar b{color:#f5c518}
+.brand-txt{font-weight:700;font-size:19px;line-height:1.1;color:#0B1322;white-space:nowrap}
+.on-dark:not(.solid) .brand-txt{color:#fff}
+.loc-ph.loc-demo{display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#ececec,#ececec 14px,#f6f6f6 14px,#f6f6f6 28px);min-height:280px}
+.loc-demo-txt,.ph-demo{font-weight:700;color:#9a9a9a;text-transform:uppercase;letter-spacing:2px;font-size:14px}
+.ph-demo{display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#ececec,#ececec 14px,#f6f6f6 14px,#f6f6f6 28px);min-height:220px;width:100%}

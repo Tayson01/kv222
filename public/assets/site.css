@@ -759,10 +759,20 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 #mobila .link{font-family:"Barlow",sans-serif;color:#64748b!important;text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;transition:color .25s}
 #mobila .link::after{content:" →";color:#dc2626}
 #mobila .link:hover{color:#fff!important}
-#mobila .clock{max-width:500px}
-#mobila .clock::before{content:"";position:absolute;inset:-15%;background:#dc2626;opacity:.06;filter:blur(120px);border-radius:50%;pointer-events:none}
-#mobila .clock .lbl b{font-family:"Bebas Neue",sans-serif;font-weight:400;font-style:italic;letter-spacing:-.03em;background:#0f172a;border:1px solid #1e293b;border-radius:16px;padding:14px 30px 16px;backdrop-filter:blur(8px);box-shadow:0 20px 50px -20px rgba(0,0,0,.7)}
-#mobila .clock .lbl small{font-family:"Barlow",sans-serif;background:#dc2626;color:#fff;letter-spacing:.2em;border:none;border-radius:3px;padding:4px 14px;font-weight:700;text-transform:uppercase}
+#mobila .mstat{position:relative;max-width:420px;width:100%;margin-inline:auto;margin-top:30px;border-radius:22px;padding:1px;background:linear-gradient(140deg,rgba(220,38,38,.75),rgba(255,255,255,.07) 35%,rgba(255,255,255,.07) 65%,rgba(249,115,22,.55));box-shadow:0 40px 90px -40px rgba(0,0,0,.85),0 0 70px -30px rgba(220,38,38,.45);overflow:hidden}
+#mobila .mstat::before{content:"";position:absolute;inset:-120%;background:conic-gradient(from 0deg,transparent 0 72%,rgba(239,68,68,.6) 82%,transparent 92%);animation:mstat-spin 5s linear infinite}
+#mobila .mstat-in{position:relative;border-radius:21px;background:linear-gradient(180deg,#0b111c,#070b12);padding:24px 26px 22px;text-align:center;overflow:hidden}
+#mobila .mstat-in::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 50% -20%,rgba(220,38,38,.2),transparent 60%);pointer-events:none}
+#mobila .mstat-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;font-family:"Barlow",sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#8b9ab2}
+#mobila .mstat-top em{font-style:normal;font-family:"Barlow",sans-serif;color:#25D366;font-size:.6rem;letter-spacing:.18em;border:1px solid rgba(37,211,102,.35);border-radius:999px;padding:2px 9px}
+#mobila .mstat-dot{width:8px;height:8px;border-radius:50%;background:#25D366;animation:openst-pulse 2s infinite}
+#mobila .mstat-time{position:relative;z-index:1;font-family:ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;font-weight:700;font-size:clamp(3rem,9vw,4.2rem);letter-spacing:.02em;color:#fff;line-height:1.05;margin-top:10px;text-shadow:0 0 40px rgba(239,68,68,.28)}
+#mobila .mstat-bot{position:relative;z-index:1;margin-top:10px;font-family:"Barlow",sans-serif;font-size:.85rem;color:#64748b}
+@keyframes mstat-spin{to{transform:rotate(360deg)}}
+
+
+
+
 @media (max-width:900px){#mobila h2{font-size:clamp(2.8rem,12vw,3.8rem)}}
 @media (max-width:900px){
   #mobila{padding-block:52px}
@@ -776,10 +786,14 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
   #mobila .btns{margin-top:18px!important;flex-direction:column;gap:10px}
   #mobila .btns .btn{width:100%;min-height:54px;font-size:1.35rem;padding:12px 18px}
   #mobila .link{font-size:.72rem;letter-spacing:.12em}
-  #mobila .clock{max-width:190px;margin-top:6px}
-  #mobila .clock::before{filter:blur(70px)}
-  #mobila .clock .lbl b{padding:9px 20px 11px;font-size:2.3rem;border-radius:12px;box-shadow:0 12px 30px -14px rgba(0,0,0,.7)}
-  #mobila .clock .lbl small{font-size:.62rem;padding:3px 10px;letter-spacing:.16em}
+  #mobila .mstat{max-width:none;margin-top:22px}
+  #mobila .mstat-in{padding:18px 20px 16px}
+  #mobila .mstat-time{font-size:2.7rem;margin-top:6px}
+  #mobila .mstat-bot{font-size:.78rem;margin-top:7px}
+
+
+
+
 }
 
 /* ---------- status deschis/inchis (ora României) ---------- */

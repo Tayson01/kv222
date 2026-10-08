@@ -907,3 +907,10 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
   .sec-rev .score > span{padding-left:0;border-left:0}
   .sec-rev .review.big q{font-size:1.35rem}
 }
+
+/* --- fixes: text above decorative quote mark, balanced 3-card grid --- */
+.sec-rev .review.big::before{z-index:0}
+.sec-rev .review.big > *{position:relative;z-index:1}
+.sec-rev .reviews-3{grid-template-columns:1.08fr .92fr}
+@media (max-width:900px){.sec-rev .reviews-3{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sec-rev .reviews-3{grid-template-columns:1fr}}

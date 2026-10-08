@@ -733,3 +733,26 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
  .hero-in{padding-top:205px}
  .demo-art{font-size:42px}
 }
+
+/* ===== Upgrade design: secțiunea Vulcanizare mobilă (Ember industrial dashboard) ===== */
+#mobila .eyebrow{color:#e85d3a;font-family:"Barlow",sans-serif;font-weight:600;letter-spacing:.2em}
+#mobila .eyebrow::before{width:32px;background:#e85d3a}
+#mobila h2{font-family:"Bebas Neue","Clash Display",sans-serif;text-transform:uppercase;font-weight:400;font-size:clamp(3.2rem,7vw,5.6rem);line-height:.9;letter-spacing:.01em}
+#mobila h2 em{color:#e85d3a;text-shadow:0 0 24px rgba(232,93,58,.35)}
+#mobila .lead{font-family:"Barlow",sans-serif;color:#94a3b8;font-size:1.08rem;max-width:34rem}
+#mobila .zones span{font-family:"Barlow",sans-serif;border-color:#334155;background:rgba(15,23,42,.5);color:#cbd5e1;font-weight:500}
+#mobila .btn{border-radius:14px;transition:transform .18s var(--ease),background .25s,box-shadow .25s}
+#mobila .btn:active{transform:scale(.96)}
+#mobila .btn-call{background:#e85d3a;box-shadow:0 10px 30px -10px rgba(232,93,58,.5);font-family:"Bebas Neue",sans-serif;font-size:1.3rem;letter-spacing:.06em;font-weight:400}
+#mobila .btn-call:hover{background:#ff6d4a}
+#mobila .btn-call svg{transition:transform .3s}
+#mobila .btn-call:hover svg{transform:rotate(12deg)}
+#mobila .btn-wa{background:#128C7E;box-shadow:0 10px 30px -10px rgba(18,140,126,.35);font-family:"Bebas Neue",sans-serif;font-size:1.3rem;letter-spacing:.06em;font-weight:400}
+#mobila .btn-wa:hover{background:#1ebea5}
+#mobila .link{font-family:"Barlow",sans-serif;color:#64748b!important;transition:color .25s}
+#mobila .link:hover{color:#e85d3a!important}
+#mobila .clock{max-width:450px}
+#mobila .clock::before{content:"";position:absolute;inset:-15%;background:#e85d3a;opacity:.05;filter:blur(90px);border-radius:50%;pointer-events:none}
+#mobila .clock .lbl b{font-family:"Bebas Neue",sans-serif;font-weight:400;letter-spacing:-.02em;background:rgba(15,23,42,.8);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:10px 24px 12px;backdrop-filter:blur(8px);box-shadow:0 20px 50px -20px rgba(0,0,0,.7)}
+#mobila .clock .lbl small{font-family:"Barlow",sans-serif;background:rgba(15,23,42,.8);color:#e85d3a;letter-spacing:.2em;border:1px solid rgba(255,255,255,.05)}
+@media (max-width:900px){#mobila h2{font-size:clamp(2.6rem,11vw,3.4rem)}}

@@ -112,10 +112,10 @@ function Index() {
           ))}
         </div>
         <div className="card mt-6 flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-          <p>{sel === null ? "Alege din listă ce ai pățit." : `Mesaj: „Salut! ${situations[sel][0]}. ${situations[sel][1]}.”`}</p>
+          <p>{sel === null ? "Alege din listă ce ai pățit." : `Mesaj: „Salut! ${situations[sel]![0]}. ${situations[sel]![1]}.”`}</p>
           <div className="flex gap-3">
             <a href={TEL} className="btn-ghost">Sună</a>
-            <a href={WA + encodeURIComponent(sel === null ? "Salut!" : `Salut! ${situations[sel][0]}. ${situations[sel][1]}.`)} className="btn-primary">Trimite pe WhatsApp</a>
+            <a href={WA + encodeURIComponent(sel === null ? "Salut!" : `Salut! ${situations[sel]![0]}. ${situations[sel]![1]}.`)} className="btn-primary">Trimite pe WhatsApp</a>
           </div>
         </div>
       </section>

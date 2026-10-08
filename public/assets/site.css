@@ -821,3 +821,99 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .btn-call{animation:call-blink 2.2s ease-in-out infinite}
 @keyframes call-blink{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0);filter:brightness(1)}50%{box-shadow:0 0 0 6px rgba(239,68,68,.25);filter:brightness(1.12)}}
 @media (prefers-reduced-motion:reduce){.btn-call{animation:none}}
+
+/* ---------- RECENZII · obsidian glass elevation ---------- */
+.sec-rev{
+  background:
+    radial-gradient(1000px 460px at 8% -12%, rgba(232,93,58,.14), transparent 68%),
+    radial-gradient(760px 420px at 92% 4%, rgba(255,194,74,.07), transparent 70%),
+    linear-gradient(180deg,#05070a 0%,#070b12 60%,#05070a 100%);
+  color:#dfe5ee;
+  overflow:hidden;
+}
+.sec-rev::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(78% 62% at 50% 0%,#000 8%,transparent 78%);
+  mask-image:radial-gradient(78% 62% at 50% 0%,#000 8%,transparent 78%);
+}
+.sec-rev::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,93,58,.55),transparent)}
+.sec-rev > .wrap{position:relative;z-index:1}
+.sec-rev .shead{max-width:none}
+.sec-rev .eyebrow{color:#e85d3a;letter-spacing:.22em;font-weight:600}
+.sec-rev .eyebrow::before{width:34px;height:2px;background:linear-gradient(90deg,#e85d3a,rgba(232,93,58,.12))}
+.sec-rev h2{
+  font-family:var(--font-d);font-weight:600;
+  font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1;letter-spacing:-.01em;
+  background:linear-gradient(100deg,#fff 0%,#fff 42%,rgba(255,255,255,.42) 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.sec-rev .scores{gap:12px}
+.sec-rev .score{
+  display:inline-flex;align-items:center;gap:20px;padding:16px 24px;border-radius:20px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);
+  backdrop-filter:blur(20px) saturate(150%);
+  box-shadow:0 34px 60px -34px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.09);
+  transition:border-color .3s,transform .3s var(--ease),box-shadow .3s;
+}
+.sec-rev .score:hover{border-color:rgba(232,93,58,.5);transform:translateY(-2px);box-shadow:0 40px 70px -34px rgba(0,0,0,1), inset 0 1px 0 rgba(255,255,255,.12)}
+.sec-rev .score b{font-family:var(--font-d);font-weight:600;font-size:2.7rem;line-height:1;color:#fff}
+.sec-rev .score > span{display:flex;flex-direction:column;gap:6px;padding-left:20px;border-left:1px solid rgba(255,255,255,.13)}
+.sec-rev .score .stars svg{width:17px;height:17px}
+.sec-rev .score small{display:block;color:rgba(255,255,255,.5);font-family:var(--font-m);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.sec-rev .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+.sec-rev .review{
+  position:relative;display:flex;flex-direction:column;gap:14px;padding:24px;border-radius:22px;
+  background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.1);
+  backdrop-filter:blur(14px);
+  box-shadow:0 26px 54px -36px rgba(0,0,0,.95), inset 0 1px 0 rgba(255,255,255,.06);
+  transition:background .3s,border-color .3s,transform .35s var(--ease),box-shadow .35s;
+}
+.sec-rev .review:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.22);background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));box-shadow:0 44px 80px -40px rgba(0,0,0,1), inset 0 1px 0 rgba(255,255,255,.1)}
+.sec-rev .review q{font-size:1rem;line-height:1.62;color:rgba(255,255,255,.84)}
+.sec-rev .review .stars svg{width:14px;height:14px}
+.sec-rev .review .who{display:flex;align-items:center;gap:11px;margin-top:auto;font-size:.94rem;font-weight:650;color:#fff}
+.sec-rev .review .av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.15);color:#fff;font-weight:700;font-size:.82rem;flex:none}
+.sec-rev .review .who small{display:block;color:rgba(255,255,255,.44);font-weight:500;font-size:.72rem;font-family:var(--font-m);letter-spacing:.02em}
+.sec-rev .review.big{
+  grid-row:span 2;padding:32px;border:1px solid transparent;justify-content:space-between;overflow:hidden;
+  background:linear-gradient(180deg,#0b1322,#080d17) padding-box,linear-gradient(165deg,rgba(255,255,255,.3),rgba(255,255,255,.05) 55%,rgba(232,93,58,.22)) border-box;
+  box-shadow:0 50px 90px -50px rgba(0,0,0,1), inset 0 1px 0 rgba(255,255,255,.07);
+}
+.sec-rev .review.big:hover{transform:translateY(-5px);background:linear-gradient(180deg,#0d1626,#080d17) padding-box,linear-gradient(165deg,rgba(232,93,58,.7),rgba(255,194,74,.28) 60%,rgba(232,93,58,.3)) border-box}
+.sec-rev .review.big::before{content:"\201E";position:absolute;top:-22px;right:14px;font-family:var(--font-d);font-size:10rem;line-height:1;color:rgba(255,255,255,.055);pointer-events:none}
+.sec-rev .review.big q{font-family:var(--font-d);font-style:italic;font-size:clamp(1.45rem,2.3vw,2.05rem);line-height:1.24;color:#fff;letter-spacing:-.01em}
+.sec-rev .review.big .stars svg{width:19px;height:19px}
+.sec-rev .review.big .av{width:46px;height:46px;font-size:.95rem;background:linear-gradient(135deg,#e85d3a,#7f1d1d);border:1px solid rgba(255,255,255,.24);box-shadow:0 14px 28px -14px rgba(232,93,58,.9)}
+.sec-rev .review.big .who{font-size:1rem;text-transform:uppercase;letter-spacing:.07em}
+.sec-rev .review.big .who small{text-transform:none;letter-spacing:.03em;color:rgba(255,255,255,.5)}
+.sec-rev .reviews .review:nth-child(4){grid-column:span 2}
+.sec-rev .reviews .review:nth-child(4) q{font-size:1.06rem}
+@media (max-width:900px){
+  .sec-rev .reviews{grid-template-columns:1fr 1fr;gap:14px}
+  .sec-rev .review.big{grid-column:span 2;grid-row:auto;padding:26px}
+  .sec-rev .review.big::before{font-size:7rem;top:-12px}
+  .sec-rev .reviews .review:nth-child(4){grid-column:span 2}
+  .sec-rev .score{width:100%;justify-content:space-between;gap:14px;padding:14px 18px}
+  .sec-rev .score b{font-size:2.2rem}
+}
+@media (max-width:560px){
+  .sec-rev .reviews{grid-template-columns:1fr}
+  .sec-rev .review.big,.sec-rev .reviews .review:nth-child(4){grid-column:auto}
+  .sec-rev .score{flex-wrap:wrap}
+  .sec-rev .score > span{padding-left:0;border-left:0}
+  .sec-rev .review.big q{font-size:1.35rem}
+}
+
+/* --- fixes: text above decorative quote mark, balanced 3-card grid --- */
+.sec-rev .review.big::before{z-index:0}
+.sec-rev .review.big > *{position:relative;z-index:1}
+.sec-rev .reviews-3{grid-template-columns:1.08fr .92fr}
+@media (max-width:900px){.sec-rev .reviews-3{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.sec-rev .reviews-3{grid-template-columns:1fr}}
+
+/* --- decorative quote mark: softer, off the text --- */
+.sec-rev .review.big::before{color:rgba(255,255,255,.038);right:-26px;top:-30px}

@@ -25,4 +25,4 @@
 - [x] /vulcanizare-aurel-vlaicu-215 → redenumită /vulcanizare-01 (255 linkuri), widget traseu Google Maps adăugat pe pagină, butoanele Traseu deschid Google Maps
 - [x] Numărul de telefon clipește (animatie call-blink pe .btn-call)
 - [x] Secțiunea „Cum ajungi la noi." (traseu) ștearsă de pe homepage și pagina locației, plus CSS/JS aferent
-- [ ] Recenzii Google: upgrade premium
+- [x] Recenzii Google: upgrade premium „Obsidian glass elevation" (glass cards, badge glass, card featured cu margine gradient, grila echilibrata pe 3 carduri, mobil verificat)

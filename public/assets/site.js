@@ -266,3 +266,25 @@
     });
   }
 })();
+
+/* ---------- status deschis/inchis dupa ora Romaniei (08:00-22:00) ---------- */
+(function () {
+  var els = document.querySelectorAll("[data-openst]");
+  if (!els.length) return;
+  function upd() {
+    var h;
+    try {
+      h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Bucharest", hour: "2-digit", hour12: false }).format(new Date()), 10);
+    } catch (e) {
+      h = new Date().getHours();
+    }
+    var open = h >= 8 && h < 22;
+    els.forEach(function (el) {
+      el.classList.toggle("on", open);
+      el.classList.toggle("off", !open);
+      el.textContent = open ? "Deschis acum" : "Închis acum";
+    });
+  }
+  upd();
+  setInterval(upd, 60000);
+})();

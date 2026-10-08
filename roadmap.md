@@ -20,3 +20,7 @@
 
 - [x] Hartă acoperire sa123 — renunțat la cererea userului, revenit la harta demo
 - [x] Card locație refăcut: poza nouă (vulcanizare-01-atelier), afișată complet fără tăieri, badge DEMO glass
+
+## 08 Oct — cereri noi
+- [ ] /vulcanizare-aurel-vlaicu-215: traseu → Google Maps, eliminat "aurel vlaicu" (slug + text)
+- [ ] Butonul cu numărul de telefon (0777 777 777) să clipească

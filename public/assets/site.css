@@ -729,6 +729,7 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .lb>.demo-art{width:min(720px,75vw);color:var(--bg-0)}
 .mnav .demo-logo,footer .demo-logo{color:var(--bg-0)}
 @keyframes demo-spin{to{transform:rotate(360deg)}}
+@keyframes demo-shine{to{background-position:200% 0}}
 @keyframes demo-letter{0%,65%,100%{transform:translateY(0)}75%{transform:translateY(-5px)}85%{transform:translateY(0)}}
 @media(max-width:900px){
  .hero-bg,.phero .bg{align-items:flex-start;justify-content:center;padding:96px 0 0}

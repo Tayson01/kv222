@@ -10,8 +10,6 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import appCss from "../styles.css?url";
-import { SiteHeader, SiteFooter } from "../components/SiteChrome";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -78,21 +76,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AutoSoft Constanța" },
-      { name: "description", content: "Vulcanizare AutoSoft în Constanța" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
+      { name: "theme-color", content: "#0B1322" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hind:wght@400;600&display=swap" },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preload", href: "/assets/fonts/ClashDisplay-Semibold.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "/assets/site.css" },
+      { rel: "icon", href: "/assets/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/assets/favicon.png" },
+    ],
+    scripts: [
+      { children: "document.documentElement.classList.add('js')" },
+      // TODO: Google Analytics / Ads (gtag G-VKNP0ZH8Z1, AW-765648821, AW-18436365192) omitted in the demo.
+      { src: "/assets/site.js", defer: true },
     ],
   }),
   shellComponent: RootShell,
@@ -103,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ro">
       <head>
         <HeadContent />
       </head>
@@ -121,9 +117,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <SiteHeader />
       <Outlet />
-      <SiteFooter />
     </QueryClientProvider>
   );
 }

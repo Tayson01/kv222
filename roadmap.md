@@ -26,3 +26,4 @@
 - [x] Numărul de telefon clipește (animatie call-blink pe .btn-call)
 - [x] Secțiunea „Cum ajungi la noi." (traseu) ștearsă de pe homepage și pagina locației, plus CSS/JS aferent
 - [x] Recenzii Google: upgrade premium „Obsidian glass elevation" (glass cards, badge glass, card featured cu margine gradient, grila echilibrata pe 3 carduri, mobil verificat)
+- [x] Favicon actualizat din iconul DEMO uploadat: placă navy rotunjită + mark alb (64px), apple-touch-icon 180px, favicon.ico template șters

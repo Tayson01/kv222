@@ -20,3 +20,7 @@
 
 - [x] Hartă acoperire sa123 — renunțat la cererea userului, revenit la harta demo
 - [x] Card locație refăcut: poza nouă (vulcanizare-01-atelier), afișată complet fără tăieri, badge DEMO glass
+
+## 08 Oct — cereri noi
+- [x] /vulcanizare-aurel-vlaicu-215 → redenumită /vulcanizare-01 (255 linkuri), widget traseu Google Maps adăugat pe pagină, butoanele Traseu deschid Google Maps
+- [x] Numărul de telefon clipește (animatie call-blink pe .btn-call)

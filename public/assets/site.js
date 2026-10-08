@@ -75,16 +75,6 @@
     });
   });
 
-  /* ---------- consimțământ cookie-uri (Google Consent Mode v2) ---------- */
-  var ck = $("#ck");
-  function ckGet() { try { var o = JSON.parse(localStorage.getItem("as_consent") || "null"); return o && o.t > Date.now() - 31536e6 ? o.v : null; } catch (e) { return null; } }
-  function ckSet(v) {
-    try { localStorage.setItem("as_consent", JSON.stringify({ v: v, t: Date.now() })); } catch (e) {}
-    var g = v === "yes" ? "granted" : "denied";
-    if (typeof w.gtag === "function") w.gtag("consent", "update", { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g });
-    if (ck) ck.hidden = true;
-    d.body.classList.remove("ck-on");
-  }
   if (ck) {
     if (!ckGet()) { ck.hidden = false; d.body.classList.add("ck-on"); }
     $$("[data-ck]", ck).forEach(function (b) { b.addEventListener("click", function () { ckSet(b.getAttribute("data-ck")); }); });

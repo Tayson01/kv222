@@ -67,20 +67,6 @@ function Index() {
   const [sel, setSel] = useState<number | null>(null);
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-20 border-b border-border bg-background/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-          <img src={IMG + "logo-alb.webp?v=f862e8a0"} alt="AutoSoft" className="h-9" />
-          <nav className="hidden gap-6 text-sm text-muted-foreground md:flex">
-            <a href="#servicii" className="hover:text-primary">Servicii</a>
-            <a href="#pasi" className="hover:text-primary">Pit-stop</a>
-            <a href="#locatii" className="hover:text-primary">Locații</a>
-          </nav>
-          <div className="flex gap-2">
-            <a href={TEL} className="btn-primary !py-2">Sună</a>
-            <a href={WA + "Salut!"} className="btn-ghost !py-2">WhatsApp</a>
-          </div>
-        </div>
-      </header>
 
       <section className="relative overflow-hidden">
         <img src={IMG + "hero-garaj-1200-0a621593.webp"} alt="Atelier AutoSoft" className="absolute inset-0 h-full w-full object-cover opacity-40" />
@@ -179,9 +165,6 @@ function Index() {
         </div>
       </section>
 
-      <footer className="border-t border-border py-10 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} AutoSoft Constanța · Vulcanizare & anvelope
-      </footer>
     </div>
   );
 }

@@ -89,7 +89,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "apple-touch-icon", href: "/assets/apple-touch-icon.png", type: "image/png" },
     ],
     scripts: [
-      { children: "document.documentElement.classList.add('js')" },
       // TODO: Google Analytics / Ads (gtag G-VKNP0ZH8Z1, AW-765648821, AW-18436365192) omitted in the demo.
       { src: "/assets/site.js", defer: true },
     ],

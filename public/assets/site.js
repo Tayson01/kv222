@@ -75,6 +75,7 @@
     });
   });
 
+  var ck = $("#ck");
   if (ck) {
     if (!ckGet()) { ck.hidden = false; d.body.classList.add("ck-on"); }
     $$("[data-ck]", ck).forEach(function (b) { b.addEventListener("click", function () { ckSet(b.getAttribute("data-ck")); }); });

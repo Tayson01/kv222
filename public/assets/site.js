@@ -103,7 +103,8 @@
       dot && dot.classList.toggle("off", !open);
       el.classList.toggle("closed", !open);
     });
-    var hand = $("#clockHand"); if (hand) hand.style.transform = "rotate(" + (now / 4) + "deg)";
+    (function(){var el=document.getElementById("mstatClock");if(!el)return;function fmt(){try{return new Intl.DateTimeFormat("ro-RO",{timeZone:"Europe/Bucharest",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date());}catch(e){return new Date().toLocaleTimeString("ro-RO");}}function tick(){el.textContent=fmt();}tick();setInterval(tick,1000);})();
+var hand = $("#clockHand"); if (hand) hand.style.transform = "rotate(" + (now / 4) + "deg)";
   }
   updStatus(); setInterval(updStatus, 60000);
 

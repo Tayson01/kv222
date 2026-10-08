@@ -9,3 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 - Pages render the original autosoftconstanta.ro markup from `src/content/pages.server.ts` (served via a server function) with original `/public/assets/site.css` + `site.js`; edit content there, not in Tailwind components — keeps the clone 1:1 with the source.
+- Demo media uses shared inline vector markup styled and animated in site.css; gallery navigation reuses that markup instead of loading source photographs, keeping replacements transparent and consistent.

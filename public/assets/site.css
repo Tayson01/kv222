@@ -717,12 +717,11 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .hero-bg>.demo-art>.demo-wheel,.phero .bg>.demo-art>.demo-wheel{width:140px;height:140px;color:var(--accent-hi)}
 .hero-bg,.phero .bg{z-index:0;pointer-events:none}
 .hero-in,.phero>.wrap{position:relative;z-index:1}
-.hero.hero--photo .hero-bg{left:auto;width:32%;padding:0;right:var(--gutter)}
-.hero.hero--photo .hero-bg img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;object-position:center;border-radius:8px}
+.hero.hero--photo .hero-bg{inset:0;width:100%;padding:0;display:block;z-index:-2}
+.hero.hero--photo .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0}
 @media(max-width:900px){
- .hero.hero--photo{display:flex;flex-direction:column;align-items:stretch}
- .hero.hero--photo .hero-bg{position:relative;inset:auto;width:min(420px,calc(100% - 2 * var(--gutter)));margin:calc(var(--header-h) + 40px) auto 0;padding:0}
- .hero.hero--photo .hero-in{padding-top:36px}
+ .hero.hero--photo .hero-bg{position:absolute;inset:0;width:100%;margin:0;padding:0}
+ .hero.hero--photo .hero-in{padding-top:calc(var(--header-h) + 120px)}
 }
 .gal button{box-shadow:none;border-radius:0}
 .gal button:hover .demo-wheel{animation-duration:4s}

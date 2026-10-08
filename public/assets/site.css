@@ -914,3 +914,6 @@ a.price-ask{text-decoration:underline;text-underline-offset:3px}
 .sec-rev .reviews-3{grid-template-columns:1.08fr .92fr}
 @media (max-width:900px){.sec-rev .reviews-3{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.sec-rev .reviews-3{grid-template-columns:1fr}}
+
+/* --- decorative quote mark: softer, off the text --- */
+.sec-rev .review.big::before{color:rgba(255,255,255,.038);right:-26px;top:-30px}

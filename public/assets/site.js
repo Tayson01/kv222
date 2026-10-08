@@ -290,30 +290,3 @@ var hand = $("#clockHand"); if (hand) hand.style.transform = "rotate(" + (now / 
   upd();
   setInterval(upd, 60000);
 })();
-
-/* ---------- Traseu: punct de plecare random + link Google Maps ---------- */
-(function () {
-  var pick = document.getElementById("routePick");
-  if (!pick) return;
-  var go = document.getElementById("routeGo");
-  var minEl = document.getElementById("routeMin");
-  var kmEl = document.getElementById("routeKm");
-  var shuffle = document.getElementById("routeShuffle");
-  var DEST = "Demo Vulcanizare Auto, Constan\u021ba";
-  function apply() {
-    var o = pick.options[pick.selectedIndex];
-    if (!o || !go) return;
-    if (minEl) minEl.textContent = "~" + o.getAttribute("data-min") + " min";
-    if (kmEl) kmEl.textContent = o.getAttribute("data-km") + " km";
-    go.href = "https://www.google.com/maps/dir/?api=1&origin=" +
-      encodeURIComponent(o.value + ", Constan\u021ba") +
-      "&destination=" + encodeURIComponent(DEST);
-  }
-  pick.addEventListener("change", apply);
-  if (shuffle) shuffle.addEventListener("click", function () {
-    pick.selectedIndex = Math.floor(Math.random() * pick.options.length);
-    apply();
-  });
-  pick.selectedIndex = Math.floor(Math.random() * pick.options.length);
-  apply();
-})();
